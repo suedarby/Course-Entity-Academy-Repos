@@ -1,0 +1,12 @@
+{
+    "_comment": "list of tech social and contact info",
+    "name": "Sue Darby",
+    "title": "Software Engineer",
+    "facebook": "<a href=\"https://www.facebook.com/suedarbyportfolio\"><i class=\"fab fa-facebook\"></i></a>",
+    "linkedin": "<a href=\"https://www.linkedin.com/in/suedarby/\"><i class=\"fab fa-linkedin\"></i></a>",
+    "twitter": "<a href=\"https://twitter.com/suedarby\"><i class=\"fab fa-twitter\"></a>",
+    "github": "<a href=\"https://github.com/suedarby\"><i class=\"fab fa-github\"></a>",
+    "email": "sue.a.darby@gmail.com",
+    "phone": "(907)707-5654 Alaskan Time",
+    "copyright": "<i class=\"far fa-copyright\"></i> 2021 Sue Darby"
+}

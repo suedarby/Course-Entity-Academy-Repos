@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">   
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--MY CSS-->    
+    <link rel="stylesheet" href="css/2020.css">
+
+<!--Font-->    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey&display=swap" rel="stylesheet">
+    <title>JavaScript Lesson 10 Final</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="text-center">
+        <h1 class="display-4 text-center mb-3">JavaScript Lesson 10 Final</h1>
+        <h2>These buttons control the display at the bottom of the page and are part of the actual final.</h2>
+        <button class="btn btn-primary my-3" id="get">GET</button>
+        <button class="btn btn-info" id="post">POST</button>
+        <button class="btn btn-warning" id="update">PATCH</button>
+        <button class="btn btn-danger" id="delete">DELETE</button>
+       <hr /> 
+      </div>
+      <hr />
+      <div class="col-sm-8">
+        <!--MAIN CONTENT ALL NON STATIC CONTENT GOES HERE-->
+        <h1>My Task List</h1>
+        <p>Hey, the final said do an app so I snagged this older project in hopes of converting it to work with the API but I'm not there yet.<i class="far fa-laugh-wink"></i></p>
+        <form>
+            <input type="text" class="todo-input">
+            <button class="todo-button" type="submit"> <i class="fas fa-plus-square"></i></button>
+            <div class="select">
+                <select name="todos" class="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+        </form>
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+    </div>
+      <hr />
+
+      <!--This one works-->
+      <div id="res"></div>
+    </div>
+<!--AXIOS CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+   
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script> 
+    <script src="main.js"></script>
+  </body>
+</html>

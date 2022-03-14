@@ -1,0 +1,54 @@
+   //    addMultipleStudents() {
+// this.state.enrolledStudents this.state.enrolledStudents + parseInt
+//   (this.state.addStudents)
+// });
+//    }
+//    incrementWaitlist(){
+// this.setState({waitlistedStudents: parseInt(this.state.
+//   addWaitlist +1)
+// });
+//    }
+
+//    addMultipleWaitlist(){
+//      this.setState({
+//        waitlistedStudents: this.state.waitlistedStudents + parseInt
+//        (this.state.addWaitlist)
+//      });
+  //  }
+   
+   
+   
+    <hr></hr>
+        <h4>Add multiple enrolled students:</h4>
+          <input type="number" 
+          onChange={event => this.setState(
+            {this:addStudents.event.target.value }
+            )
+          } 
+          value=
+          {this.state.addStudents}/>
+            <button onClick={
+              this.addMultipleStudents.bind(this)
+            }>
+            Increase Students Amount
+            </button>
+      <hr></hr>
+        <h3>Wait listed Students 
+        {this.state.waitlistedStudents.totalStudents}
+        </h3>
+          <button onClick={this.incrementWaitlist.bind(this)}>
+          Add 1 to Wait list 
+          </button>
+      <hr></hr>
+        <h4>Add multiple to wait list</h4>
+          <input type="number" 
+          onChange={event => this.setState(
+            {this:addWaitlist.event.target.value }
+            )
+          } 
+          value=
+          {this.state.addWaitlist} />
+            <button onClick={
+              this.addMultipleWaitlist.bind(this)}>
+              Increase Wait list
+              </button>
