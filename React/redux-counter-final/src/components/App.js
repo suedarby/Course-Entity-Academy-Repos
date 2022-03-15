@@ -6,7 +6,7 @@ import { increment, decrement, reset } from '../actions/index';
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className='container-fluid'>
         <h3>Counter</h3>
         <Counter count={this.props.count} onIncrement={this.props.onIncrement} onDecrement={this.props.onDecrement} onReset={this.props.onReset} />
       </div>
