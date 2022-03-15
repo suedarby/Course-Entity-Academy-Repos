@@ -1,9 +1,10 @@
 import React from 'react';
-
-const Counter = ({ count, onDecrement, onIncrement, onReset }) => {
+//depends on app.js 
+//onInputNumberChange, numberInputted, onInputNumber come from actions/index.js
+const Counter = ({ count, onDecrement, onIncrement, onReset, onInputNumberChange, numberInputted, onInputNumber}) => {
 
     return (
-      <div>
+      <div className='container-fluid'>
         <div>
         <br />
         <br />
@@ -14,6 +15,7 @@ const Counter = ({ count, onDecrement, onIncrement, onReset }) => {
           <br />  <br />
           <br />
           <button onClick={onReset}>Reset</button>
+          <input type ="text" onChange={event => onInputNumberChange(event.target.value)} value ={numberInputted} /><button onClick={onInputNumber}>Change Count</button>
         </div>
       </div>
      

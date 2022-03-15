@@ -10,3 +10,11 @@ export const reset = () => ({
   type: 'RESET'
 });
 
+export const inputNumber = () => ({
+  type:' INPUT_NUMBER'
+});
+
+export const inputNumberChange = () => ({
+  type: 'INPUT_NUMBER_CHANGE',
+  number
+});
