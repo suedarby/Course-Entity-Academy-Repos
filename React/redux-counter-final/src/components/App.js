@@ -1,7 +1,7 @@
 import React from 'react';
 import Counter from './Counter';
 import { connect } from 'react-redux';
-import { increment, decrement, reset } from '../actions/index';
+import { increment, decrement, reset, onInputNumber, onInputNumberChange } from '../actions/index';
 
 // add onInputNumberChange, numberInputted, onInputNumber with this.props
 class App extends React.Component {
