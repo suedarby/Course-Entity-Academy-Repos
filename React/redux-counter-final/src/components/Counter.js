@@ -9,9 +9,9 @@ const Counter = ({ count, onDecrement, onIncrement, onReset }) => {
         <br />
           <button onClick={onDecrement}>&nbsp;&nbsp;-&nbsp;&nbsp;</button>&nbsp;&nbsp;
           &nbsp; <span>{count}</span> &nbsp;&nbsp;
-          <br />
-          <br />
+        
           <button onClick={onIncrement}>&nbsp;&nbsp;+&nbsp;&nbsp;</button>&nbsp;&nbsp;
+          <br />  <br />
           <br />
           <button onClick={onReset}>Reset</button>
         </div>
