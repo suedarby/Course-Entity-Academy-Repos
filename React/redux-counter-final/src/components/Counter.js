@@ -13,9 +13,14 @@ const Counter = ({ count, onDecrement, onIncrement, onReset, onInputNumberChange
         
           <button onClick={onIncrement}>&nbsp;&nbsp;+&nbsp;&nbsp;</button>&nbsp;&nbsp;
           <br />  <br />
-          <br />
-          <button onClick={onReset}>Reset</button>
-          <input type ="text" onChange={event => onInputNumberChange(event.target.value)} value ={numberInputted} /><button onClick={onInputNumber}>Change Count</button>
+         
+          <button onClick={onReset}>Reset</button>          
+          <br />  <br />
+         
+          <input type ="text" onChange={event => onInputNumberChange(event.target.value)} value ={numberInputted} />          
+          <br />  <br />
+          
+         <button onClick={onInputNumber}>Change Count</button>
         </div>
       </div>
      
