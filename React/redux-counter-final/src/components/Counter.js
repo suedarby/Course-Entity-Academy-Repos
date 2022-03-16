@@ -1,7 +1,7 @@
 import React from 'react';
 //depends on app.js 
 //onInputNumberChange, numberInputted, onInputNumber come from actions/index.js
-const Counter = ({ count, onDecrement, onIncrement, onReset, onInputNumberChange, numberInputted, onInputNumber}) => {
+const Counter = ({ count, onDecrement, onIncrement, onReset, onInputNumberChange, numberInputted, onInputNumber, inputNumberChange, inputNumber}) => {
 
     return (
       <div className='container-fluid'>
@@ -17,10 +17,13 @@ const Counter = ({ count, onDecrement, onIncrement, onReset, onInputNumberChange
           <button onClick={onReset}>Reset</button>          
           <br />  <br />
          
-          <input type ="text" onChange={event => onInputNumberChange(event.target.value)} value ={numberInputted} />          
+    
+
+          <input type ="text" onChange={event => inputNumberChange(event.target.value)} value ={numberInputted} />          
           <br />  <br />
-          
-         <button onClick={onInputNumber}>Change Count</button>
+
+
+         <button onClick={inputNumber}>Change Count</button>
         </div>
       </div>
      

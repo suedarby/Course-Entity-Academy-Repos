@@ -1,14 +1,16 @@
 const initialState = {
-  count: 0, 
-  numberInputted: 0
+  count: 0,
+  numberInputted: 0,
+ // timesClicked:0
 };
-
+//updating state
 function counterReducer(state = initialState, action) {
   switch (action.type) {
     case 'INCREMENT':
       return {
         ...state,
-        count: state.count + 1
+        count: state.count + 1,
+      //  timesClicked: state.timesClicked +1
       };
     case 'DECREMENT':
       return {
@@ -20,16 +22,16 @@ function counterReducer(state = initialState, action) {
         ...state,
         count: (state.count = 0)
       };
-    case 'INPUT_NUMBER':
+      case 'INPUT_NUMBER_CHANGE':
+        return {
+          ...state,
+          numberInputted: action.number
+        };
+            case 'INPUT_NUMBER':
       return {
-...state,
-count:parseInt(state.numberInputted),
-numberInputted: null
-      };
-    case 'INPUT_NUMBER_CHANGE':
-      return {
-...state,
-numberInputted:action.number
+        ...state,
+        count: parseInt(state.numberInputted),
+        numberInputted: null
       };
     default:
       return state;
