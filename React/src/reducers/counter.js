@@ -1,7 +1,7 @@
 const initialState = {
   count: 0,
   numberInputted: 0,
- // timesClicked:0
+ timesClicked:0
 };
 //updating state
 function counterReducer(state = initialState, action) {
@@ -10,12 +10,13 @@ function counterReducer(state = initialState, action) {
       return {
         ...state,
         count: state.count + 1,
-      //  timesClicked: state.timesClicked +1
+       timesClicked: state.timesClicked +1
       };
     case 'DECREMENT':
       return {
         ...state,
-        count: state.count - 1
+        count: state.count - 1,
+        timesClicked: state.timesClicked + 1
       };
     case 'RESET':
       return {
@@ -31,6 +32,7 @@ function counterReducer(state = initialState, action) {
       return {
         ...state,
         count: parseInt(state.numberInputted),
+        timesClicked: 0,
         numberInputted: null
       };
     default:

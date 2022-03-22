@@ -11,14 +11,14 @@ class App extends React.Component {
         
         <Counter 
         count={this.props.count} 
+        timesClicked={this.props.timesClicked}
         onIncrement={this.props.onIncrement} 
         onDecrement={this.props.onDecrement} 
         onReset={this.props.onReset} 
-        onInputNumber={this.props.inputNumber} 
-        onInputNumberChange ={this.props.inputNumberChange}
-        inputNumber={this.props.onInputNumber} 
-        inputNumberChange ={this.props.onInputNumberChange}  
-        numberInputted={this.props.numberInputted} />
+        onInputNumber={this.props.onInputNumber} 
+        onInputNumberChange ={this.props.onInputNumberChange}/>
+       
+ 
       </div>
     );
   }
@@ -37,6 +37,7 @@ function mapDispatchToProps(dispatch) {
 function mapStateToProps(state) {
     return {
       count: state.count,
+      timesClicked: state.timesClicked,
       numberInputted: state.numberInputted
     };
   }
