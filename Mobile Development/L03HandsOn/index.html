@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<!--will use Job Statistics, Character Overview and something for the portfolio -->
+	<title>Project Overview - Sewing Project Manager</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=4dd39352821e43e6731c9ab86f1ce1f8">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css?h=37efe7e508357f382d0a5b2b73cd47ee">
+</head>
+
+<body id="page-top">
+	<div id="wrapper">
+		<!--react component-->
+		<nav
+			class="navbar navbar-dark flex-grow-1 flex-shrink-1 flex-fill align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+			<div class="container-fluid d-flex flex-column p-0">
+				<a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+					<div class="sidebar-brand-text mx-3">
+						<!--
+								--I have several projects in mind for this template Job Tracker or My Portfolio or TableTop Game Tracker
+								--I want the long name to shorten to app "initials" ex. SPM, JT, MP, TTG when the device changes to a smaller size
+							-->
+						<span>Sewing Project Manager</span>
+					</div>
+				</a>
+				<hr class="sidebar-divider my-0">
+				<!--convert to React later-->
+				<ul class="navbar-nav text-light" id="accordionSidebar">
+					<li class="nav-item">
+						<a class="nav-link active" href="/index.html">
+							<i class="fas fa-tachometer-alt"></i>
+							<span>Overview</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fas fa-user"></i>
+							<span>Profile</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="far fa-user-circle"></i>
+							<span>Login</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fas fa-user-circle"></i>
+							<span>Register</span>
+						</a>
+					</li>
+				</ul>
+				<div class="text-center d-none d-md-inline">
+					<button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button>
+				</div>
+			</div>
+		</nav>
+		<div class="d-flex flex-column" id="content-wrapper">
+			<div id="content">
+				<nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+					<div class="container-fluid">
+						<button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button">
+							<i class="fas fa-bars"></i>
+						</button>
+						<form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+							<div class="input-group">
+								<input class="bg-light form-control border-0 small" type="text"
+									placeholder="Search for ...">
+								<button class="btn btn-primary py-0" type="button">
+									<i class="fas fa-search"></i>
+								</button>
+							</div>
+						</form>
+						<ul class="navbar-nav flex-nowrap ms-auto">
+							<li class="nav-item dropdown d-sm-none no-arrow">
+								<a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown"
+									href="#">
+									<i class="fas fa-search"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in"
+									aria-labelledby="searchDropdown">
+									<form class="me-auto navbar-search w-100">
+										<div class="input-group">
+											<input class="bg-light form-control border-0 small" type="text"
+												placeholder="Search for ...">
+											<div class="input-group-append">
+												<button class="btn btn-primary py-0" type="button">
+													<i class="fas fa-search"></i>
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!--react component-->
+				<div class="container-fluid">
+					<div class="d-sm-flex justify-content-between align-items-center mb-4">
+						<h3 class="text-dark mb-0">Overview</h3>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-xl-3 mb-4">
+							<div class="card shadow border-start-primary py-2">
+								<div class="card-body">
+									<div class="row align-items-center no-gutters">
+										<div class="col me-2">
+											<div class="text-uppercase text-primary fw-bold text-xs mb-1">
+												<!--Project Name top 5?, top 5 jobs, top 5 characters, top 5 portfolio items
+												I want the font to grow and shrink with the device size-->
+												<span>Top Projects</span>
+											</div>
+											<div class="text-dark fw-bold h5 mb-0">
+												<!--pulls from mongodb change bullets and make links to a detail page -->
+												<ul class="text-xs">
+													<li>Project 1</li>
+													<li>Project 2</li>
+													<li>Project 3</li>
+													<li>Project 4</li>
+													<li>Project 5</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--react component-->
+						<div class="col-md-6 col-xl-3 mb-4">
+							<div class="card shadow border-start-success py-2">
+								<div class="card-body">
+									<div class="row align-items-center no-gutters">
+										<div class="col me-2">
+											<div class="text-uppercase text-success fw-bold text-xs mb-1">
+												<!--TT game system, top companies or favorite recruiters, top skill list, projects-->
+												<span>Tag &amp; Category Counts</span>
+											</div>
+											<div class="text-dark fw-bold h5 mb-0">
+												<!--shrink font not bold-->
+												<ul class="text-xs">
+													<li>Tag 1</li>
+													<li>Category 2</li>
+													<li>Item 3</li>
+													<li>Item 4</li>
+													<li>Item 5</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--react component-->
+						<div class="row">
+							<div class="col-lg-6 mb-4">
+								<div class="card shadow mb-4">
+									<div class="card-header py-3">
+										<h6 class="text-primary fw-bold m-0">Projects</h6>
+									</div>
+									<div class="card-body">
+										<!--or job or character or skill-->
+										<h4 class="small fw-bold">
+											Project 1
+											<span class="float-end">20%</span>
+										</h4>
+										<div class="progress mb-4">
+											<div class="progress-bar bg-danger" aria-valuenow="20" aria-valuemin="0"
+												aria-valuemax="100" style="width: 20%;">
+												<span class="visually-hidden">20%</span>
+											</div>
+										</div>
+										<h4 class="small fw-bold">
+											Project 2
+											<span class="float-end">40%</span>
+										</h4>
+										<div class="progress mb-4">
+											<div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0"
+												aria-valuemax="100" style="width: 40%;">
+												<span class="visually-hidden">40%</span>
+											</div>
+										</div>
+										<h4 class="small fw-bold">
+											Project 3
+											<span class="float-end">60%</span>
+										</h4>
+										<div class="progress mb-4">
+											<div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0"
+												aria-valuemax="100" style="width: 60%;">
+												<span class="visually-hidden">60%</span>
+											</div>
+										</div>
+										<h4 class="small fw-bold">
+											Project 4
+											<span class="float-end">80%</span>
+										</h4>
+										<div class="progress mb-4">
+											<div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0"
+												aria-valuemax="100" style="width: 80%;">
+												<span class="visually-hidden">80%</span>
+											</div>
+										</div>
+										<h4 class="small fw-bold">
+											Project 5
+											<span class="float-end">Complete!</span>
+										</h4>
+										<div class="progress mb-4">
+											<div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0"
+												aria-valuemax="100" style="width: 100%;">
+												<span class="visually-hidden">100%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--react component-->
+								<div class="card shadow mb-4">
+									<div class="card-header py-3">
+										<!--React Component can CRUD/check things off list-->
+										<h6 class="text-primary fw-bold m-0">Todo List</h6>
+									</div>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">
+											<div class="row align-items-center no-gutters">
+												<div class="col me-2">
+													<h6 class="mb-0">
+														<strong>Purchase Supplies for Project X</strong>
+													</h6>
+													<span class="text-xs">10:30 AM Tuesday</span>
+												</div>
+												<div class="col-auto">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox"
+															id="formCheck-1">
+														<label class="form-check-label" for="formCheck-1"></label>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="list-group-item">
+											<div class="row align-items-center no-gutters">
+												<div class="col me-2">
+													<h6 class="mb-0">
+														<strong>Item Y from Amazon Arrival</strong>
+													</h6>
+													<span class="text-xs">Friday</span>
+												</div>
+												<div class="col-auto">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox"
+															id="formCheck-2">
+														<label class="form-check-label" for="formCheck-2"></label>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="list-group-item">
+											<div class="row align-items-center no-gutters">
+												<div class="col me-2">
+													<h6 class="mb-0">
+														<strong>Look for Items A, B & C</strong>
+													</h6>
+													<span class="text-xs">Monday</span>
+												</div>
+												<div class="col-auto">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox"
+															id="formCheck-3">
+														<label class="form-check-label" for="formCheck-3"></label>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!--react component pulls from mongodb closest to due date and current project may end up the same will have to think more on this-->
+							<div class="col">
+								<div class="row">
+									<div class="col-lg-6 mb-4">
+										<div class="card textwhite bg-primary text-white shadow">
+											<div class="card-body">
+												<!--Character Links, Special Page Links, Company links-->
+												<!--Current project-->
+												<p class="m-0">Current Project 1</p>
+												<p class="text-white-50 small m-0">Status: Location: Tag:</p>
+												<p class="m-0">Current Project 2</p>
+												<p class="text-white-50 small m-0">Status: Location: Tag:</p>
+												<p class="m-0">Current Project 3</p>
+												<p class="text-white-50 small m-0">Status: Location: Tag:</p>
+											</div>
+										</div>
+									</div>
+									<!--react component-->
+									<div class="col-lg-6 mb-4">
+										<div class="card textwhite bg-success text-white shadow">
+											<div class="card-body">
+												<!--done-->
+												<p class="m-0">Recently Completed</p>
+												<p class="text-white-50 small m-0">Duration of project from start to
+													finish</p>
+											</div>
+										</div>
+									</div>
+									<!--react component-->
+									<div class="col-lg-6 mb-4">
+										<div class="card textwhite bg-info text-white shadow">
+											<div class="card-body">
+												<!--need to finish-->
+												<p class="m-0">Closest to Finished</p>
+												<p class="text-white-50 small m-0">When does this need to be done?</p>
+											</div>
+										</div>
+									</div>
+									<!--react component-->
+									<div class="col-lg-6 mb-4">
+										<div class="card textwhite bg-warning text-white shadow">
+											<div class="card-body">
+												<!--SHOPPING-->
+												<p class="m-0">Needs Supplies</p>
+												<p class="text-white-50 small m-0">Project, Shopping List</p>
+											</div>
+										</div>
+									</div>
+									<!--react component-->
+									<div class="col-lg-6 mb-4">
+										<div class="card textwhite bg-danger text-white shadow">
+											<div class="card-body">
+												<!--when was that due?-->
+												<p class="m-0">Close to Due Date</p>
+												<p class="text-white-50 small m-0">Birthday, Christmas or other event
+													count down</p>
+											</div>
+										</div>
+									</div>
+									<!--react component-->
+									<div class="col-lg-6 mb-4">
+										<div class="card textwhite bg-secondary text-white shadow">
+											<div class="card-body">
+												<!--someday-->
+												<p class="m-0">UFOs</p>
+												<p class="text-white-50 small m-0">UnFinished Objects List</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--React Component can CRUD/check things off list-->
+								<div class="card shadow mb-4">
+									<div class="card-header py-3">
+										<h6 class="text-primary fw-bold m-0">Shopping List</h6>
+									</div>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">
+											<div class="row align-items-center no-gutters">
+												<div class="col me-2">
+													<h6 class="mb-0">
+														<strong>Embroidery Thread</strong>
+													</h6>
+													<span class="text-xs">Project</span>
+													<span class="text-xs">Notes: Red, Green, Purple</span>
+													<span class="text-xs">JoAnn's or Amazon</span>
+												</div>
+												<div class="col-auto">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox"
+															id="formCheck-1">
+														<label class="form-check-label" for="formCheck-1"></label>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="list-group-item">
+											<div class="row align-items-center no-gutters">
+												<div class="col me-2">
+													<h6 class="mb-0">
+														<strong>Embroidery Needles</strong>
+													</h6>
+													<span class="text-xs">Project</span>
+													<span class="text-xs">Notes</span>
+													<span class="text-xs">10:30 AM Tuesday</span>
+												</div>
+												<div class="col-auto">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox"
+															id="formCheck-2">
+														<label class="form-check-label" for="formCheck-2"></label>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="list-group-item">
+											<div class="row align-items-center no-gutters">
+												<div class="col me-2">
+													<h6 class="mb-0">
+														<strong>Pins</strong>
+													</h6>
+													<span class="text-xs">Project</span>
+													<span class="text-xs">Notes</span>
+													<span class="text-xs">10:30 AM Tuesday</span>
+												</div>
+												<div class="col-auto">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox"
+															id="formCheck-3">
+														<label class="form-check-label" for="formCheck-3"></label>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer convert to react-->
+	<footer class="bg-white sticky-footer">
+		<div class="container my-auto">
+			<div class="text-center my-auto copyright">
+				<span>Copyright &copy; Sue Darby 2022</span>
+			</div>
+		</div>
+	</footer>
+	</div>
+	<a class="border rounded d-inline scroll-to-top" href="#page-top">
+		<i class="fas fa-angle-up"></i>
+	</a>
+	</div>
+	<!--Scripts-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>
