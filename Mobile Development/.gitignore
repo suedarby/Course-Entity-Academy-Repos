@@ -3,7 +3,7 @@
 *.zip
 
 # ignore ALL files in ANY directory with these names
-
+old/
 book-app/
 Cordova/
 Ionic/
