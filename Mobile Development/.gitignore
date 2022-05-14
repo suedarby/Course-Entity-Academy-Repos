@@ -1,0 +1,13 @@
+# ignore ALL .log files
+*.log
+*.zip
+
+# ignore ALL files in ANY directory with these names
+
+book-app/
+Cordova/
+Ionic/
+ionic-boiler-master/
+L03HandsOn/
+L05HandsOn/
+responsive-final-project/
